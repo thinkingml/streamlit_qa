@@ -1,12 +1,12 @@
-## streamlit_qa
+# streamlit_qa
 Viva 333
 
-# About
+## About
 A simple iterator for Q&A document iteration
 
-# Data
+## Data
 Columns: ["Section", "Question Number", "Question", "Answer"]
 
-# Enhancements
+## Enhancements
 Add a Filter to select Sections
 Add a Shuffle Feature
