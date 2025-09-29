@@ -1,0 +1,47 @@
+Term,Definition
+Allele,A specific candidate value for a hyperparameter within a gene  modeled as a discrete entity in a 1D cellular automaton that can undergo cellular operations based on fitness feedback.
+Bayesian Optimisation (BO),Surrogate-based optimisation method using Gaussian processes to model objective functions and guide sequential sampling.
+Benchmark Functions,"Standard mathematical test problems (Ackley, Rastrigin, Rosenbrock, etc.) used to evaluate optimiser performance on known challenging landscapes."
+Cellular Automata (CA),"Discrete computational structures where cells evolve according to local interaction rules; in ECO, used to manage allele populations within genes."
+Classical Mutation,"Traditional evolutionary operator that randomly overwrites allele values, triggered when cellular mechanisms fail to generate viable candidates."
+Coalescence,A cellular operator that merges two closely-valued similarly-performing alleles into a single weighted-average allele to reduce redundancy and stabilise representation.
+Cohen's d,Standardised measure of effect sise indicating the magnitude of difference between two distributions in terms of standard deviations.
+Crossover,Evolutionary operator that recombines genetic material between parent genomes to create offspring with novel gene combinations.
+Division,A cellular operator that splits a high-performing allele into two closely-spaced values to increase resolution around promising regions of the search space.
+Dual-Phase Evolution,ECO's search strategy comprising exploration phase (prioritising diversity and range expansion) and refinement phase (focusing on precision and consolidation).
+ECO (Evolutionary Cellular Optimisation),A hybrid optimisation algorithm that combines evolutionary algorithms with cellular automata to dynamically construct and adapt hyperparameter search spaces.
+Empirical Cumulative Distribution Function (ECDF),"Plot showing the proportion of samples achieving given performance thresholds, used to compare optimiser effectiveness."
+Epistemic Bias,"The implicit assumptions about problem structure embedded in optimisation algorithms, which ECO aims to make adaptive rather than fixed."
+Epistemology of Search,ECO's philosophical framework treating optimisation as knowledge acquisition about problem structure rather than mere parameter selection.
+Extinction,The removal of persistently underperforming alleles from the gene pool to manage computational resources and focus search effort.
+fANOVA (Functional Analysis of Variance),Method for quantifying the marginal contribution of individual hyperparameters to observed performance variance.
+Failure-to-Add (FTA),Counter tracking unsuccessful attempts to add evaluated candidates to the population due to insufficient fitness.
+Failure-to-Create (FTC),Counter tracking unsuccessful attempts to generate unique candidate genomes due to duplication.
+Fine-tuning,Process of adapting pre-trained models to specific tasks by continuing training on domain-specific data with adjusted hyperparameters.
+Fitness Function,"Domain-specific measure used to evaluate genome quality, serving as the primary driver for evolutionary selection and cellular updates."
+Gene,"A single hyperparameter within ECO's representation, containing a mutable population of alleles arranged as a 1D cellular automaton."
+Gene Pool,The active population of candidate genomes maintained across generations for selection and reproduction.
+Generation sero,Initial population created by selecting alleles from central regions of defined hyperparameter ranges.
+Generative Search,"ECO's approach of constructing and evolving the search space itself, rather than merely sampling from a predefined space."
+Genome,"A complete hyperparameter configuration composed of multiple genes, representing a candidate solution for evaluation."
+Grid Search,Exhaustive optimisation method evaluating all combinations of discretised hyperparameter values within predefined ranges.
+Holland-von Neumann (HvN) Landscape,Conceptual model for ECO's co-evolving search space combining global fitness-based selection with local self-organising dynamics.
+Hyperparameter Optimisation (HPO),The process of finding optimal configuration settings for machine learning algorithms that are not learned from data.
+Injection,A cellular operator that creates new alleles between two high-performing neighbors to increase search resolution in promising regions.
+Insertion,A cellular operator that adds new alleles in under-explored regions of a gene's range to expand search boundaries.
+Legacy Mutation,"Alternative term for classical mutation, emphasising its role as fallback when constructive cellular operators stagnate."
+Mann-Whitney U Test,Non-parametric statistical test used to compare performance distributions between optimisation methods without assuming normality.
+Metadata,"Configuration parameters that define gene constraints including permissible ranges, minimum spacing between alleles, and mutation thresholds."
+Random Search,Optimisation method sampling hyperparameter configurations uniformly at random from predefined ranges.
+Regularisation,Techniques (dropout weight decay) used to prevent overfitting by constraining model complexity during training.
+Resurrection,"The potential reintroduction of previously extinct alleles through classical mutation, providing a mechanism to recover lost genetic material."
+Search Space,"The domain of possible hyperparameter configurations; in ECO, this is dynamically constructed rather than predefined."
+Search Space Construction,ECO's fundamental paradigm of building the space of possible solutions rather than navigating a fixed space.
+Selection Pressure,Evolutionary mechanism favoring reproduction of higher-fitness genomes over multiple generations.
+Statistical Significance,"Measure of confidence that observed performance differences are not due to random chance, assessed using p-values with Bonferroni correction."
+Static Search Space,Traditional approach where the set of possible hyperparameter values is fixed prior to optimisation.
+Stochastic Dominance,Statistical property where one distribution consistently outperforms another across all performance thresholds.
+Structural Adaptation,ECO's ability to modify its representation and search strategy based on problem characteristics discovered through feedback.
+Surrogate Model,Mathematical approximation of the true objective function used by methods like Bayesian optimisation to guide search decisions.
+Transfer Learning,"Machine learning approach using pre-trained models as starting points for new tasks, often requiring careful hyperparameter optimisation."
+Validation Set,"Portion of data used to evaluate model performance during hyperparameter optimisation, separate from training and test sets."
